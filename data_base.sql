@@ -14,7 +14,7 @@ CREATE TABLE countries (
 );
 
 CREATE TABLE unemployment_rates (
-  id INT PRIMARY KEY auto_increment,
+  id INT PRIMARY KEY auto_increment not null,
   country_code varchar(3),
   year INT,
   rate decimal(11,8)
